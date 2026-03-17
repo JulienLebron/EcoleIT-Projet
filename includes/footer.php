@@ -1,3 +1,6 @@
+<?php
+$prefix = ($currentPage === 'reservation') ? 'index.php' : '';
+?>
 <footer class="py-5 text-white" style="background-color: #111827;">
     <div class="container">
 
@@ -22,11 +25,11 @@
             <div class="col-md-6 col-lg-3">
                 <h4 class="fs-6 mb-4">Navigation</h4>
                 <ul class="list-unstyled">
-                    <li class="mb-2"><a href="#accueil" class="footer-link">Accueil</a></li>
-                    <li class="mb-2"><a href="#services" class="footer-link">Services & Tarifs</a></li>
-                    <li class="mb-2"><a href="#galerie" class="footer-link">Galerie</a></li>
-                    <li class="mb-2"><a href="#temoignages" class="footer-link">Témoignages</a></li>
-                    <li class="mb-2"><a href="#contact" class="footer-link">Contact</a></li>
+                    <li class="mb-2"><a href="<?= $prefix ?>#accueil" class="footer-link">Accueil</a></li>
+                    <li class="mb-2"><a href="<?= $prefix ?>#services" class="footer-link">Services & Tarifs</a></li>
+                    <li class="mb-2"><a href="<?= $prefix ?>#galerie" class="footer-link">Galerie</a></li>
+                    <li class="mb-2"><a href="<?= $prefix ?>#temoignages" class="footer-link">Témoignages</a></li>
+                    <li class="mb-2"><a href="<?= $prefix ?>#contact" class="footer-link">Contact</a></li>
                 </ul>
             </div>
 

@@ -12,7 +12,6 @@ $options = [
 try
 {
     $pdo = new PDO($host, $login, $password, $options);
-    print_r($pdo);
 }
 catch(PDOException $e)
 {
@@ -30,4 +29,4 @@ define("RACINE_SITE", "/studio21/");
 $contenu = '';
 //------------------------------------------- AUTRES 
 // Ici on inclu le fichier des fonctions
-require_once './config/functions.php';
+require_once __DIR__ . '/functions.php';

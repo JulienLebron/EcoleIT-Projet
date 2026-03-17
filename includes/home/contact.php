@@ -13,8 +13,7 @@
         </div>
 
         <div class="row g-5 mx-auto" style="max-width: 90rem;">
-
-            <!-- Carte et informations -->
+            <!-- Carte -->
             <div class="col-lg-6">
                 <div class="mb-4">
                     <div class="overflow-hidden shadow" style="aspect-ratio: 16 / 9; border-radius: 1.5rem; background-color: #f3f4f6;">
@@ -31,6 +30,9 @@
                     </div>
                 </div>
 
+            </div>
+            <div class="col-lg-6">
+                <!-- Informations -->
                 <div class="p-4 shadow-lg" style="background: linear-gradient(135deg, #f9fafb, #fff1f2); border-radius: 1.5rem;">
                     <h3 class="fs-4 text-dark mb-4">Coordonnées & Accès</h3>
 
@@ -38,7 +40,7 @@
 
                         <div class="d-flex gap-3">
                             <div class="d-flex align-items-center justify-content-center flex-shrink-0 text-white"
-                                 style="width: 3.5rem; height: 3.5rem; background-color: #f43f5e; border-radius: 1rem;">
+                                style="width: 3.5rem; height: 3.5rem; background-color: #f43f5e; border-radius: 1rem;">
                                 <i class="fa-solid fa-location-dot" style="font-size: 28px;"></i>
                             </div>
                             <div>
@@ -52,7 +54,7 @@
 
                         <div class="d-flex gap-3">
                             <div class="d-flex align-items-center justify-content-center flex-shrink-0 text-white"
-                                 style="width: 3.5rem; height: 3.5rem; background-color: #f43f5e; border-radius: 1rem;">
+                                style="width: 3.5rem; height: 3.5rem; background-color: #f43f5e; border-radius: 1rem;">
                                 <i class="fa-solid fa-phone" style="font-size: 28px;"></i>
                             </div>
                             <div>
@@ -65,7 +67,7 @@
 
                         <div class="d-flex gap-3">
                             <div class="d-flex align-items-center justify-content-center flex-shrink-0 text-white"
-                                 style="width: 3.5rem; height: 3.5rem; background-color: #f43f5e; border-radius: 1rem;">
+                                style="width: 3.5rem; height: 3.5rem; background-color: #f43f5e; border-radius: 1rem;">
                                 <i class="fa-solid fa-envelope" style="font-size: 28px;"></i>
                             </div>
                             <div>
@@ -78,7 +80,7 @@
 
                         <div class="d-flex gap-3">
                             <div class="d-flex align-items-center justify-content-center flex-shrink-0 text-white"
-                                 style="width: 3.5rem; height: 3.5rem; background-color: #f43f5e; border-radius: 1rem;">
+                                style="width: 3.5rem; height: 3.5rem; background-color: #f43f5e; border-radius: 1rem;">
                                 <i class="fa-solid fa-route" style="font-size: 28px;"></i>
                             </div>
                             <div>
@@ -90,117 +92,9 @@
                                 </div>
                             </div>
                         </div>
-
                     </div>
                 </div>
             </div>
-
-            <!-- Formulaire -->
-            <div id="rendez-vous" class="col-lg-6">
-                <div class="p-4 p-md-5 text-white shadow-lg" style="background: linear-gradient(135deg, #f43f5e, #fb7185); border-radius: 1.5rem;">
-                    <h3 class="fs-3 mb-3">Prendre rendez-vous</h3>
-                    <p class="mb-4" style="color: #ffe4e6;">
-                        Remplissez le formulaire ci-dessous et nous vous recontacterons dans les plus brefs délais pour confirmer votre rendez-vous.
-                    </p>
-
-                    <form action="#" method="post">
-
-                        <div class="mb-3">
-                            <label for="name" class="form-label" style="color: #fff1f2;">Nom complet *</label>
-                            <input
-                                type="text"
-                                id="name"
-                                name="name"
-                                class="form-control py-3"
-                                placeholder="Votre nom"
-                                required
-                                style="background-color: rgba(255,255,255,0.1); backdrop-filter: blur(4px); border: 2px solid rgba(255,255,255,0.2); color: white; border-radius: 1rem;"
-                            >
-                        </div>
-
-                        <div class="mb-3">
-                            <label for="email" class="form-label" style="color: #fff1f2;">Email *</label>
-                            <input
-                                type="email"
-                                id="email"
-                                name="email"
-                                class="form-control py-3"
-                                placeholder="votre@email.fr"
-                                required
-                                style="background-color: rgba(255,255,255,0.1); backdrop-filter: blur(4px); border: 2px solid rgba(255,255,255,0.2); color: white; border-radius: 1rem;"
-                            >
-                        </div>
-
-                        <div class="mb-3">
-                            <label for="phone" class="form-label" style="color: #fff1f2;">Téléphone *</label>
-                            <input
-                                type="tel"
-                                id="phone"
-                                name="phone"
-                                class="form-control py-3"
-                                placeholder="06 12 34 56 78"
-                                required
-                                style="background-color: rgba(255,255,255,0.1); backdrop-filter: blur(4px); border: 2px solid rgba(255,255,255,0.2); color: white; border-radius: 1rem;"
-                            >
-                        </div>
-
-                        <div class="mb-3">
-                            <label for="service" class="form-label" style="color: #fff1f2;">Service souhaité *</label>
-                            <select
-                                id="service"
-                                name="service"
-                                class="form-select py-3"
-                                required
-                                style="background-color: rgba(255,255,255,0.1); backdrop-filter: blur(4px); border: 2px solid rgba(255,255,255,0.2); color: white; border-radius: 1rem;"
-                            >
-                                <option value="" style="color: #111827;">Sélectionnez un service</option>
-                                <option value="coupe" style="color: #111827;">Coupe</option>
-                                <option value="coloration" style="color: #111827;">Coloration</option>
-                                <option value="brushing" style="color: #111827;">Brushing</option>
-                                <option value="soin" style="color: #111827;">Soin capillaire</option>
-                                <option value="mariee" style="color: #111827;">Coiffure de mariée</option>
-                                <option value="autre" style="color: #111827;">Autre</option>
-                            </select>
-                        </div>
-
-                        <div class="mb-3">
-                            <label for="date" class="form-label" style="color: #fff1f2;">Date souhaitée</label>
-                            <input
-                                type="date"
-                                id="date"
-                                name="date"
-                                class="form-control py-3"
-                                style="background-color: rgba(255,255,255,0.1); backdrop-filter: blur(4px); border: 2px solid rgba(255,255,255,0.2); color: white; color-scheme: dark; border-radius: 1rem;"
-                            >
-                        </div>
-
-                        <div class="mb-3">
-                            <label for="message" class="form-label" style="color: #fff1f2;">Message</label>
-                            <textarea
-                                id="message"
-                                name="message"
-                                rows="4"
-                                class="form-control py-3"
-                                placeholder="Vos préférences, questions ou demandes spéciales..."
-                                style="background-color: rgba(255,255,255,0.1); backdrop-filter: blur(4px); border: 2px solid rgba(255,255,255,0.2); color: white; resize: none; border-radius: 1rem;"
-                            ></textarea>
-                        </div>
-
-                        <button
-                            type="submit"
-                            class="btn btn-light w-100 py-3 shadow"
-                            style="color: #f43f5e; border-radius: 1rem;">
-                            Envoyer la demande
-                        </button>
-
-                        <p class="small text-center mt-3 mb-0" style="color: #ffe4e6;">
-                            * Champs obligatoires - Nous vous répondrons sous 24h
-                        </p>
-
-                    </form>
-                </div>
-            </div>
-
         </div>
     </div>
 </section>

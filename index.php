@@ -1,4 +1,6 @@
 <?php require_once './config/database.php';  ?>
+<?php require_once __DIR__ . '/includes/data/horaires.php'; ?>
+<?php require_once __DIR__ . '/includes/data/services.php'; ?>
 <!doctype html>
 <html lang="en">
   <head>
@@ -10,7 +12,10 @@
     <link rel="stylesheet" href="./public/css/style.css">
   </head>
   <body>
-    <?php require_once './includes/header.php' ?>
+    <?php 
+      $currentPage = 'home';
+      require_once './includes/header.php' 
+    ?>
     
     
     <main class="container">

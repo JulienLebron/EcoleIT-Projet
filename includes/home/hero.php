@@ -45,7 +45,7 @@
                 </div>
 
                 <div class="d-flex flex-wrap gap-3">
-                    <a href="#rendez-vous" class="btn rounded-pill px-4 py-3 text-white shadow" style="background-color: #fb7185; border: none;">
+                    <a href="reservation.php" class="btn rounded-pill px-4 py-3 text-white shadow" style="background-color: #fb7185; border: none;">
                         Prendre rendez-vous
                     </a>
                     <a href="#services" class="btn btn-outline-dark rounded-pill px-4 py-3">
