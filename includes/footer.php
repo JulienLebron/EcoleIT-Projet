@@ -53,7 +53,7 @@
                     <li class="d-flex gap-3">
                         <i class="fa-solid fa-envelope text-danger"></i>
                         <a href="mailto:contact@lelegance.fr" class="footer-link">
-                            contact@lelegance.fr
+                            contact@studio21.fr
                         </a>
                     </li>
 
@@ -64,10 +64,16 @@
             <div class="col-md-6 col-lg-3">
                 <h4 class="fs-6 mb-4">Horaires</h4>
                 <ul class="list-unstyled text-secondary mb-4">
-                    <li>Lun - Mer : 9h - 19h</li>
-                    <li>Jeu - Ven : 9h - 20h</li>
-                    <li>Samedi : 8h - 18h</li>
-                    <li>Dimanche : Fermé</li>
+                    <?php foreach ($horairesParJour as $jour): ?>
+                        <?php
+                            $texteHoraires = $jour['ouvert']
+                                ? implode(' / ', $jour['creneaux'])
+                                : 'Fermé';
+                        ?>
+                        <li class="mb-1">
+                            <?= htmlspecialchars($jour['nom']) ?> : <?= htmlspecialchars($texteHoraires) ?>
+                        </li>
+                    <?php endforeach; ?>
                 </ul>
 
                 <h4 class="fs-6 mb-3">Suivez-nous</h4>
