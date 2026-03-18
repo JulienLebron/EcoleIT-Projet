@@ -107,3 +107,28 @@ function formatHeure(string $heure): string
     $timestamp = strtotime($heure);
     return date('G\hi', $timestamp);
 }
+
+// login admin
+define('ADMIN_LOGIN', 'admin');
+
+// mot de passe hashé (généré avec password_hash)
+define('ADMIN_PASSWORD_HASH', '$2y$10$FQJxxzxfnTMWWu5zSdgkAe.Za38v6gb6aqpDQXfrpi0d0lOS/CNBm');
+
+
+function isAdminLoggedIn(): bool
+{
+    return !empty($_SESSION['admin_logged_in']);
+}
+
+function requireAdmin(): void
+{
+    if (!isAdminLoggedIn()) {
+        header('Location: login.php');
+        exit;
+    }
+}
+
+function e(string $value): string
+{
+    return htmlspecialchars($value, ENT_QUOTES, 'UTF-8');
+}
